@@ -89,7 +89,7 @@ main
     main
     {
         width: 96% ;
-        max-width: 100vh;
+        max-width: 80vh;
         border-radius: 1%;
         margin: 5 auto;
     }
