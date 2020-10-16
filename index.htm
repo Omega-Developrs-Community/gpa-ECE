@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>GPA - Grade Points Average.</title>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <span id="iCon">
+
+        </span>
+        Omega Developrs
+    </header>
+
+    <main id=container>
+
+        <section class="int-user">
+            <h4 class="greetings">
+                Hello, there.
+            </h4>
+            <p class="description">
+                Let's compute 
+                 <span class="colorize">
+                    Grade Points Average.
+                </span>
+            </p>
+        </section>
+
+
+        <div id="usr-input">
+
+            <label for="count">
+                Enter the number of subjects
+            </label>
+            <input type="number" name="count" id="count" min=1 max=15 title="Range(1-15)">
+
+
+            <button type="button" onclick = "append()" title="Create additional fields to fetch your grades.">
+                Create Space
+            </button>
+
+        </div>
+
+       <div id="con-space" >
+        <span id="space">
+            <select id="paper" class="paper" >
+                <option value="4">Mathematics III</option>
+                <option value="4">Circuit Theory</option>
+                <option value="3">EMFT</option>
+                <option value="3">Digital Electronics</option>
+                <option value="3">Electronic Circuits I </option>
+                <option value="3">EVS</option>
+                <option value="1">EDC Laboratory</option>
+                <option value="1">DE Laboratory</option>
+    
+    
+                <option value="4">M4(PRP)</option>
+                <option value="3">Signals and Systems</option>
+                <option value="3">TLW</option>
+                <option value="3">MPMC</option>
+                <option value="3">Electronic Circuits II</option>
+                <option value="3">Professional Ethics </option>
+                <option value="1">ECS Laboratory</option>
+                <option value="1">MPMC Laboratory</option>
+    
+    
+                <option value="4">DSP</option>
+                <option value="3">LIC</option>
+                <option value="3">Communication Theory</option>
+                <option value="3">Control Systems</option>
+                <option value="3">TQM</option>
+                <option value="3">Elective - A</option>
+                <option value="1">DSP Laboratory</option>
+                <option value="1">LIC Laboratory</option>
+                <option value="1">Technical Seminar - I</option>
+    
+    
+                <option value="3">Digital Comm. Techniques</option>
+                <option value="3">Antennas & Wave Propag.</option>
+                <option value="4">VLSI Design</option>
+                <option value="3">Computer Networks</option>
+                <option value="3">Elective - A </option>
+                <option value="3">Open Elective</option>
+                <option value="1">ADC Laboratory</option>
+                <option value="1">NP Laboratory</option>
+                <option value="1">Technical Seminar II</option>
+    
+    
+                <option value="3">Microwave Electronics</option>
+                <option value="4">Optical Comm. Networks</option>
+                <option value="3">Cyber Physical Systems</option>
+                <option value="3">Elective- A </option>
+                <option value="3">Elective - B</option>
+                <option value="3">Open Elective</option>
+                <option value="1">RF and ME Laboratory</option>
+                <option value="1">CPS Laboratory</option>
+                <option value="4">Mini Project</option>
+    
+                
+                <option value="3">Elective - A</option>
+                <option value="3">Elective - B</option>
+                <option value="3">Elective - B</option>
+                <option value="10">Project Work</option>
+               
+            </select>
+            <select id="grade" class="grade">
+                <option value="10">O</option>
+                <option value="9">A+</option>
+                <option value="8">A</option>
+                <option value="7">B+</option>
+                <option value="6">B</option>
+                <option value="0">RA</option>
+            </select>
+        </span>
+       </div>
+
+        <div id= "btn-options">
+
+            <button type="submit" onclick= "compute()">
+                Compute GPA
+            </button>
+
+            <button type="reset" onclick= "reset()">
+                Reset                
+            </button>
+
+
+        </div>
+
+
+
+        <div id="result">
+
+            <span class="con-label">
+                Your 
+                <span class="colorize">
+                    Grade Point Average
+                </span>
+                is 
+                <span id="gradPoint">
+                </span>
+            </span>
+            
+
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <div class="foot" id="foot">
+            Copyrights reserved. (c) 2020 Omega Developrs
+        </div>
+    </footer>
+    
+</body>
+</html>
