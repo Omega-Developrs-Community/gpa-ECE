@@ -9,7 +9,15 @@ function addSpace()
     document.getElementById("btn-options").style.display ="block" ;
 
     var count = document.getElementById("count").value ;
-
+    var doc = document.getElementById('foot');
+   
+   
+    if (count > 11){
+        doc.style.bottom='auto';
+    }
+    else{
+        doc.style.bottom='0';
+    }
 
     
     var space = document.getElementById("space") ;
@@ -37,9 +45,7 @@ function addSpace()
 
 function append()
 { 
-    var doc = document.getElementById('foot');
-   doc.style.position = "absolute";
-    doc.style.bottom='auto';
+ 
     if(callCount == 0)
     {
        addSpace() ;
@@ -108,15 +114,10 @@ function compute()
             console.warn("You have arrear(s) !") ;
         }
 
-
         paperArray[i] = Number(paper[i].value) ;
         gradeArray[i] = grade[i].value ;
         creditsTot += paperArray[i] ;
         creditsProd += paperArray[i] * gradeArray[i] ;
-
-        
-        
-
     }
     console.count()
     console.log(creditsProd) ;
@@ -127,7 +128,7 @@ function compute()
     
     document.getElementById("gradPoint").innerHTML = (creditsProd/creditsTot).toPrecision(4) ;
 
-    alert((creditsProd/creditsTot).toPrecision(4) + "\n" + "you have " + countArrear + " " + "arrear(s)." ) ;
+    alert((creditsProd/creditsTot).toPrecision(4) + "\n" + "you have " + countArrear + "arrear(s)." ) ;
 
    
 
